@@ -14,7 +14,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NewPostComponent } from './components/posts/new-post/new-post.component';
 import { NewPostModule } from './components/posts/new-post/new-post.module';
-import { PostComponent } from './components/posts/post/post.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import {ToolbarComponent} from './shared/components/toolbar/toolbar.component';
@@ -27,17 +26,18 @@ import { ContainerAppComponent } from './components/pages/container-app/containe
 import { ModalComponent } from './shared/components/modal/modal.component';
 import { EditPostComponent } from './components/posts/edit-post/edit-post.component';
 import { EditPostModule } from './components/posts/edit-post/edit-post.module';
+import { DetailsPostsComponent } from './components/posts/details-posts/details-posts.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NewPostComponent,
-    PostComponent,
     ToolbarComponent,
     ContainerAppComponent,
     ModalComponent,
     EditPostComponent,
+    DetailsPostsComponent,
     
   ],
   imports: [

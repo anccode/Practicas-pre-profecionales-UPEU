@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
     loginByEmail(form)
     .then(res=>{
       console.log('successfully',res);
-      this.route.navigate(['/'])
+      this.route.navigate(['/admin/posts'])
     })
     .catch(err => console.log ('Error',err));
     
