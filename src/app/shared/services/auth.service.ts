@@ -15,11 +15,13 @@ export class AuthService {
   constructor(private afAuth: AngularFireAuth, private storage: AngularFireStorage) { 
     this.userData$ = afAuth.authState;
   }
+    
 
   loginByEmail(user:UserI){
     const{email,password} = user;
     return this.afAuth.signInWithEmailAndPassword(email,password);
   }
+  
   logout(){
     this.afAuth.signOut();
   }

@@ -8,10 +8,10 @@ const routes: Routes = [
   {path:'', 
   component:ContainerAppComponent,
   children:[
-    { path: 'practicas', loadChildren: () => import('./components/pages/home/home.module').then(m => m.HomeModule) }, 
-  { path:'practicas/:id', component: DetailsPostsComponent },
+    { path: 'home', loadChildren: () => import('./components/pages/home/home.module').then(m => m.HomeModule) }, 
+  { path:'posts/:id', component: DetailsPostsComponent },
   { path: 'Inicio', loadChildren: () => import('./components/pages/about/about.module').then(m => m.AboutModule) },
-  {path: '', redirectTo:'Inicio',
+  {path: '', redirectTo:'/Inicio',
 pathMatch:'full'}
   ]
 },
