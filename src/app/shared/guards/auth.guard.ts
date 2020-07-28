@@ -17,7 +17,7 @@ export class AuthGuard implements CanActivate {
       map(user=>{
         if(!user){
           //redirectorio
-          this.router.navigate(['/login']);
+          this.router.navigate(['/IniciarSession/posts']);
           return false;
         }
         return true;

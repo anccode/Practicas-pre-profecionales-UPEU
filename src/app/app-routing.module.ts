@@ -8,15 +8,15 @@ const routes: Routes = [
   {path:'', 
   component:ContainerAppComponent,
   children:[
-    { path: 'home', loadChildren: () => import('./components/pages/home/home.module').then(m => m.HomeModule) }, 
-  { path:'post/:id', component: DetailsPostsComponent },
-  { path: 'about', loadChildren: () => import('./components/pages/about/about.module').then(m => m.AboutModule) },
-  {path: '', redirectTo:'home',
+    { path: 'practicas', loadChildren: () => import('./components/pages/home/home.module').then(m => m.HomeModule) }, 
+  { path:'practicas/:id', component: DetailsPostsComponent },
+  { path: 'Inicio', loadChildren: () => import('./components/pages/about/about.module').then(m => m.AboutModule) },
+  {path: '', redirectTo:'Inicio',
 pathMatch:'full'}
   ]
 },
-  { path: 'admin', loadChildren: () => import('./components/admin/admin.module').then(m => m.AdminModule) },
-  { path: 'login', loadChildren: () => import('./components/auth/login/login.module').then(m => m.LoginModule) },
+  { path: 'perfil', loadChildren: () => import('./components/admin/admin.module').then(m => m.AdminModule) },
+  { path: 'IniciarSession', loadChildren: () => import('./components/auth/login/login.module').then(m => m.LoginModule) },
   
 ];
 
