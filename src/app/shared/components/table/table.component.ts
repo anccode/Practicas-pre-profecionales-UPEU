@@ -22,7 +22,7 @@ export interface PeriodicElement{
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit, AfterViewInit {
-  displayedColumns: string[]=['titlePost','tagsPost','actions'];
+  displayedColumns: string[]=['Nombre','Empresa','Escuela','actions'];;
   dataSource = new MatTableDataSource();
   
   @ViewChild(MatPaginator,{static:true})paginator: MatPaginator;
@@ -47,19 +47,19 @@ export class TableComponent implements OnInit, AfterViewInit {
   onDeletePost(post:PostI){
 
     Swal.fire({
-      title:'you are sure',
-      text:`you wont be able to revert this!`,
+      title:'Estas seguro que quieres eliminar',
+      text:`nose podra recuperar`,
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor:'#3085d60',
       cancelButtonColor:'#d33',
-      confirmButtonText: 'Yes, delete it!'
+      confirmButtonText: 'Si Por Favor!'
     }).then(result=>{
       
       //elimina una fila de la tabla
       if(result.value){
         this.postSvc.deletePostById(post).then(()=>{
-          Swal.fire('Deleted!','Your post has been deleted.','success');
+          Swal.fire('Eliminado!','Tu Practica a sido eliminado.','success');
         }).catch((error)=>{
           Swal.fire('Deleted!','There was an error deleting this post.','error');
         });
@@ -74,7 +74,7 @@ export class TableComponent implements OnInit, AfterViewInit {
   openDialog(post?:PostI):void{
     const config ={
       data:{
-        message:post ? 'Edit Post': 'New Post',
+        message:post ? 'Editar': 'Solicitud de Practica',
         content: post
       }
     };

@@ -55,11 +55,21 @@ export class PostService {
     console.log('PostSvc',post);
     
     const postObj = {
-      titlePost: post.titlePost,
-      contentPost: post.contentPost,
+      nombre: post.nombre,
+      codigoU: post.codigoU,
+      facultad: post.facultad,
+      escuelaP: post.escuelaP,
+      filial: post.filial,
+      ciclo: post.ciclo,
+      eNombre: post.eNombre,
+      eTipo: post.eTipo,
+      eDireccion: post.eDireccion,
+      eTelefono: post.eTelefono,
+      eGerente: post.eGerente,
+      eEmail: post.eEmail,
+      //imagen no tocar
       imagePost:this.downloadURL,
-      fileRef: this.filePath,
-      tagsPost: post.tagsPost
+      fileRef: this.filePath
     };
     if(post.id){
       return this.postsCollection.doc(post.id).update(postObj);

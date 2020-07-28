@@ -1,5 +1,5 @@
 export interface FileI{
-    //imagen
+    //pdf datos o puede poner una imagen
     name: string;
     imageFile: File;
     size: string;

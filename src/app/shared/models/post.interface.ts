@@ -1,9 +1,20 @@
 export interface PostI{
-    //alumno
-    titlePost: string;
-    contentPost: string;
-    imagePost?: any;
+    //datos alumno
     id?: string;
-    tagsPost: string;
+    nombre: string;
+    codigoU:string;
+    facultad:string;
+    escuelaP:string;
+    filial:string;
+    ciclo:string;
+    //imagen o pdf
+    imagePost?: any;
     fileRef?: string;
+    //datos de las practicas
+    eNombre:string;
+    eTipo:string;
+    eDireccion:string;
+    eTelefono?:string;
+    eGerente?:string;
+    eEmail?:string;
 }

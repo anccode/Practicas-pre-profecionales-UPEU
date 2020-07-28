@@ -3,7 +3,7 @@
         <mat-card-header>
 
             <div class="label bottom">
-                <p>change</p>
+                <p>Imagen</p>
                 <img [src]="currentImage" (click)="inputImageProfile.click()"  alt=""/>
                 <input hidden type="file" #inputImageProfile
                 formControlName="photoURL"
@@ -13,11 +13,11 @@
         </mat-card-header>
         <mat-card-content>
             <mat-form-field>
-                <mat-label>name</mat-label>
+                <mat-label>Nombre</mat-label>
                 <input matInput placeholder="Name" formControlName="displayName">
             </mat-form-field>
             <mat-form-field>
-                <mat-label>Email</mat-label>
+                <mat-label>Correo</mat-label>
                 <input matInput placeholder="Email" formControlName="email">
             </mat-form-field>
         </mat-card-content>

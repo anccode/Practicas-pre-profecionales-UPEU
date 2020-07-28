@@ -12,10 +12,20 @@ export class NewPostComponent implements OnInit {
   constructor(private postSvc:PostService) { }
 
   public newPostForm = new FormGroup({
-    titlePost: new FormControl('',Validators.required),
-    contentPost: new FormControl('',Validators.required),
-    tagsPost: new FormControl('',Validators.required),
-    imagePost: new FormControl('',Validators.required)
+    id: new FormControl('', Validators.required),
+    nombre: new FormControl('', Validators.required),
+    codigoU: new FormControl('', Validators.required),
+    facultad: new FormControl('', Validators.required),
+    escuelaP: new FormControl('', Validators.required),
+    filial: new FormControl('', Validators.required),
+    ciclo: new FormControl('', Validators.required),
+    eNombre: new FormControl('', Validators.required),
+    eTipo: new FormControl('', Validators.required),
+    eDireccion: new FormControl('', Validators.required),
+    eTelefono: new FormControl('', Validators.required),
+    eGerente: new FormControl('', Validators.required),
+    eEmail: new FormControl('', Validators.required),
+    imagePost: new FormControl('', Validators.required)
   });
 
   ngOnInit(): void {

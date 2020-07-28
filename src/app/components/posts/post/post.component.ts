@@ -1,3 +1,4 @@
+
 import { Component, OnInit, Input } from '@angular/core';
 
 import {PostService} from '../../posts/post.service';

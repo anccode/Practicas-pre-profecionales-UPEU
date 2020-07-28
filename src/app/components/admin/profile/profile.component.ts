@@ -17,8 +17,9 @@ export class ProfileComponent implements OnInit {
 
   public profileForm = new FormGroup({
     displayName: new FormControl('', Validators.required),
-    email: new FormControl({value:'',disabled:true}, Validators.required),
+    email: new FormControl({value:'',disabled:true}),
     photoURL: new FormControl('', Validators.required)
+    
   }); 
   ngOnInit(): void {
     this.authSvc.userData$.subscribe(user => {
