@@ -1,7 +1,13 @@
+export interface Roles{
+    supervisor: boolean;
+    alumno: boolean;
+    secretaria: boolean;
+}
+
 export interface UserI{
     email:string;
     password?:string;
-    roll?: boolean;
+    roles?: Roles;
     displayName?:string;
     photoURL?:string;
     uid?:string;

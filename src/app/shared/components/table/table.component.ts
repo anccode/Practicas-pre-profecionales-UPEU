@@ -1,4 +1,4 @@
-import { Component,OnInit,ViewChild, AfterViewInit } from '@angular/core';
+import { Component,OnInit,ViewChild, AfterViewInit, Input } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator} from '@angular/material/paginator';
 import { MatSort} from '@angular/material/sort';
@@ -22,11 +22,12 @@ export interface PeriodicElement{
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit, AfterViewInit {
-  displayedColumns: string[]=['Nombre','Empresa','Escuela','actions'];;
+  displayedColumns: string[]=['Escuela','Nombre','Empresa','Estado','actions'];;
   dataSource = new MatTableDataSource();
   
   @ViewChild(MatPaginator,{static:true})paginator: MatPaginator;
   @ViewChild(MatSort,{static:true})sort:MatSort;
+  @Input() post:PostI;
   constructor(private postSvc: PostService, public dialog: MatDialog) { }
 
   ngOnInit(): void { 

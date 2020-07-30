@@ -1,9 +1,16 @@
+.fondo{
+    background: url(../../../../assets/img/Slider-clases-2020.jpg);
+}
+
 table {
-    width: 100%;
+    margin-left: 80px;
+
+    width: 80%;
+    height: 80%;
   }
 .mat-form-field{
     font-size: 14px;
-    width: 100%;
+    width: 30%;
 }
 
 .mat-form-field{
@@ -17,6 +24,7 @@ table {
     justify-content: flex-end;
     width: 100%;
     margin: 1rem -0.6rem;
+    margin-left: -430px;
     button{
         width: 25%;
         color: #fff;

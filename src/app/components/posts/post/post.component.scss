@@ -1,6 +1,6 @@
 .mat-card{
-    background: #fff;
-    color: #000;
+    background: #6b202e;
+    color: #6b202e;
     width: 80%;
     margin: 1% auto;
     padding:2% ;
@@ -19,18 +19,18 @@
         }
     }
     img{
-        width: 80%;
+        width: 100%;
         border-radius: 6px;
     }
     
 }
+
 .aling-center{
     text-align: center;
     clear:both;
     display: block;
     margin: 6px auto;
 }
-
 
 a{
     cursor:pointer;
@@ -39,7 +39,7 @@ a{
 }
 
 img {
-    height: 200px;
+    height: 250px;
 }
 p.content{
     white-space: nowrap;

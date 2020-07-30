@@ -5,14 +5,14 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyBNVr6-jq5Sp1uDsRD6JnVtUkHT-WFA2ac",
-  authDomain: "system-practice-upeu.firebaseapp.com",
-  databaseURL: "https://system-practice-upeu.firebaseio.com",
-  projectId: "system-practice-upeu",
-  storageBucket: "system-practice-upeu.appspot.com",
-  messagingSenderId: "890817199641",
-  appId: "1:890817199641:web:3d64cb7dffe3a8dde2b488",
-  measurementId: "G-D91Q00ZH6P"
+    apiKey: "AIzaSyBasj_ia9RS91mw2BIPUxZan7KbHupWzgQ",
+  authDomain: "practicas-upeu-8a97d.firebaseapp.com",
+  databaseURL: "https://practicas-upeu-8a97d.firebaseio.com",
+  projectId: "practicas-upeu-8a97d",
+  storageBucket: "practicas-upeu-8a97d.appspot.com",
+  messagingSenderId: "777528804220",
+  appId: "1:777528804220:web:d029c100fac8da68559af9",
+  measurementId: "G-QZJRQ3GRS9"
   }
 };
 

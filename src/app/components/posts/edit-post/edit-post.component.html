@@ -26,23 +26,19 @@
         </mat-form-field>
 
         <mat-form-field>
-            <mat-label>ciclo</mat-label>
-            <input matInput placeholder="ciclo" formControlName="ciclo" >
-        </mat-form-field>
-
-        <mat-form-field>
-            <mat-select aria-placeholder="filial" multiple formControlName="filial">
+            <mat-select aria-placeholder="filial" placeholder="filial" multiple formControlName="filial">
                 <mat-option value="Juliaca">Juliaca</mat-option>
                 <mat-option value="Lima">Lima</mat-option>
                 <mat-option value="Tarapoto">Tarapoto</mat-option>
             </mat-select>
         </mat-form-field>
+
     <mat-form-field>
             <mat-label>Nombre de la Empresa</mat-label>
             <input matInput placeholder="Nombre de la Empresa" formControlName="eNombre" >
         </mat-form-field>
         <mat-form-field>
-            <mat-select aria-placeholder="Tipo" multiple formControlName="eTipo">
+            <mat-select aria-placeholder="Tipo" placeholder="Privada" multiple formControlName="eTipo">
                 <mat-option value="Privada">Privada</mat-option>
                 <mat-option value="Publica">Publica</mat-option>
             </mat-select>
@@ -63,10 +59,14 @@
             <mat-label>correo de la empresa</mat-label>
             <input matInput placeholder="correo de la empresa" formControlName="eEmail" >
         </mat-form-field>
-        <mat-form-field>
-            <mat-label>Nombre de la Empresa</mat-label>
-            <input matInput placeholder="Nombre de la Empresa" formControlName="imagePost" >
+        
+         <mat-form-field>
+            <mat-select aria-placeholder="estado" placeholder="Revisado"  formControlName="estado">
+                <mat-option value="revisado">Revisado</mat-option>
+                <mat-option value="Falta Revisar">Falta Revisar</mat-option>
+            </mat-select>
         </mat-form-field>
+        
         <div class="container-input-file">
             <label class="custom-file">
                 <input type="file" formControlName="imagePost" (change)="handleImage($event)"  />

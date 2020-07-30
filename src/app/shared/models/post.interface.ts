@@ -7,6 +7,8 @@ export interface PostI{
     escuelaP:string;
     filial:string;
     ciclo:string;
+    fecha:string;
+    estado:string;
     //imagen o pdf
     imagePost?: any;
     fileRef?: string;

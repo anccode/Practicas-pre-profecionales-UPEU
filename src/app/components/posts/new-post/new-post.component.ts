@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {FormGroup,FormControl,Validators} from '@angular/forms';
 import {PostI} from '../../../shared/models/post.interface';
 import {PostService} from '../post.service';
+import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-new-post',
   templateUrl: './new-post.component.html',
@@ -20,6 +22,8 @@ export class NewPostComponent implements OnInit {
     filial: new FormControl('', Validators.required),
     ciclo: new FormControl('', Validators.required),
     eNombre: new FormControl('', Validators.required),
+    estado: new FormControl('', Validators.required),
+    fecha: new FormControl('', Validators.required),
     eTipo: new FormControl('', Validators.required),
     eDireccion: new FormControl('', Validators.required),
     eTelefono: new FormControl('', Validators.required),
@@ -32,11 +36,15 @@ export class NewPostComponent implements OnInit {
   }
 
   addNewPost(data: PostI){
-    console.log('New Post', data);
     this.postSvc.preAddAndUpdatePost(data, this.image);
+    Swal.fire(
+      'Solicitud Enviada',
+      'Te avisaremos cuando este revisado',
+      'success'
+    )
   }
+
   handleImage(event:any):void{
     this.image = event.target.files[0];
   }
-
 }

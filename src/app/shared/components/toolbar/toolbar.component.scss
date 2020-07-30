@@ -1,8 +1,12 @@
 .mat-toolbar.mat-primary {
-    background: #992e45 !important;
+    background: #ffffff98 !important;
 }
+mat-toolbar .logo a> img{
+    height: 50px;
+    margin-left: 35px;
+}    
 a{
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     
 }

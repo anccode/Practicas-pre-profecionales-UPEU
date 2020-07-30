@@ -25,6 +25,8 @@ export class EditPostComponent implements OnInit {
     filial: new FormControl('', Validators.required),
     ciclo: new FormControl('', Validators.required),
     eNombre: new FormControl('', Validators.required),
+    estado: new FormControl('', Validators.required),
+    fecha: new FormControl('', Validators.required),
     eTipo: new FormControl('', Validators.required),
     eDireccion: new FormControl('', Validators.required),
     eTelefono: new FormControl('', Validators.required),
@@ -65,14 +67,16 @@ export class EditPostComponent implements OnInit {
       facultad: this.post.facultad,
       escuelaP: this.post.escuelaP,
       filial: this.post.filial,
+      fecha: this.post.fecha,
+      estado: this.post.estado,
       ciclo: this.post.ciclo,
       eNombre:this.post.eNombre,
       etipo: this.post.eTipo,
       edireccion: this.post.eDireccion,
       etelefono: this.post.eTelefono,
       egerente: this.post.eGerente,
-      eEmail: this.post.eEmail, 
-    })
+      eEmail: this.post.eEmail 
+    });
   }
 
 }

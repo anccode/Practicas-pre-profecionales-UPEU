@@ -58,6 +58,8 @@ export class PostService {
       nombre: post.nombre,
       codigoU: post.codigoU,
       facultad: post.facultad,
+      fecha: post.fecha,
+      estado: post.estado,
       escuelaP: post.escuelaP,
       filial: post.filial,
       ciclo: post.ciclo,

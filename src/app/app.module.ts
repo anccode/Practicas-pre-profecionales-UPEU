@@ -56,7 +56,7 @@ import { DetailsPostsComponent } from './components/posts/details-posts/details-
   entryComponents: [ModalComponent],
   providers: [{
     //storage de firebase link de tu firebasestorage'gs://blog-a4136.appspot.com'
-    provide:BUCKET,useValue:'gs://system-practice-upeu.appspot.com'
+    provide:BUCKET,useValue:'gs://practicas-upeu-8a97d.appspot.com'
   }],
   bootstrap: [AppComponent]
 })
